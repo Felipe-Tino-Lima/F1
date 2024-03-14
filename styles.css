@@ -72,10 +72,10 @@ body {
 
 @keyframes corrida {
   0% {
-    left: -40px; /* Começar um pouco fora da tela para parecer que os carros estão vindo */
+    left: -40px; 
   }
   100% {
-    left: calc(100% - 40px); /* Mover até o final da pista */
+    left: calc(100% - 40px); 
   }
 }
 
@@ -96,25 +96,25 @@ body {
       bottom: 0;
     }
     
-    /* Cores dos carros */
+    
     .carro:nth-child(1) {
-      background-color: red; /* Lewis Hamilton */
+      background-color: red; 
     }
     
     .carro:nth-child(2) {
-      background-color: blue; /* Max Verstappen */
+      background-color: blue; 
     }
     
     .carro:nth-child(3) {
-      background-color: silver; /* Valtteri Bottas */
+      background-color: silver;
     }
     
     .carro:nth-child(4) {
-      background-color: yellow; /* Charles Leclerc */
+      background-color: yellow;
     }
     
     .carro:nth-child(5) {
-      background-color: orange; /* Sergio Perez */
+      background-color: orange;
     }
     
     .apostas {
