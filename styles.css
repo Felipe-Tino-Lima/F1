@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.pista {
+  width: 100%;
+  height: 200px;
+  background-color: #999999;
+  position: relative;
+  overflow: hidden;
+}
+
+.carro {
+  width: 40px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+}
+
+.carro:nth-child(2) {
+  background-color: blue;
+  bottom: 20px;
+}
+
+.carro:nth-child(3) {
+  background-color: green;
+  bottom: 40px;
+}
+
+.carro:nth-child(4) {
+  background-color: yellow;
+  bottom: 60px;
+}
+
+.carro:nth-child(5) {
+  background-color: orange;
+  bottom: 80px;
+}
+
+.linha-chegada {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  animation: piscar 1s infinite;
+}
+
+.inicio-pista {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.fim-pista {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+@keyframes corrida {
+  0% {
+    left: -40px; /* Começar um pouco fora da tela para parecer que os carros estão vindo */
+  }
+  100% {
+    left: calc(100% - 40px); /* Mover até o final da pista */
+  }
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 1;.pista {
+      width: 100%;
+      height: 100px;
+      background-color: lightgray;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    .carro {
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+    }
+    
+    /* Cores dos carros */
+    .carro:nth-child(1) {
+      background-color: red; /* Lewis Hamilton */
+    }
+    
+    .carro:nth-child(2) {
+      background-color: blue; /* Max Verstappen */
+    }
+    
+    .carro:nth-child(3) {
+      background-color: silver; /* Valtteri Bottas */
+    }
+    
+    .carro:nth-child(4) {
+      background-color: yellow; /* Charles Leclerc */
+    }
+    
+    .carro:nth-child(5) {
+      background-color: orange; /* Sergio Perez */
+    }
+    
+    .apostas {
+      margin-bottom: 20px;
+    }
+    
+    button {
+      display: block;
+      margin-top: 10px;
+    }
+    
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
